@@ -8,3 +8,19 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    
+    .advantageComponentWrapper{
+        outline: 1px solid blue;
+        border-radius: 20px;
+        width: 35rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+}
