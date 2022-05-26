@@ -1,7 +1,6 @@
 #OurServices{
     width: 100%;
     height: auto;
-    background-color: lightsalmon;
     padding: 22rem 0 0 0;
 }
 
@@ -119,7 +118,7 @@
     .service{
         width: 100%;
         min-width: 340px;
-        height: 15rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -1,0 +1,65 @@
+#ourWorks{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 0 0;
+    background-color: lightgreen;
+}
+
+.ourWorksWrapper{
+    width: 100%;
+    outline: 1px solid green;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.ourWorksWrapper h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.ourWorksWrapper p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* grid de servicios */
+.projectsGrid {
+    width: 100%;
+    height: auto;
+    padding: 1rem 15rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+}
+
+.project{
+    text-align: center;
+    width: 100%;
+    padding: 20rem 0;
+    outline: 1px solid blue;
+}
+
+@media (max-width: 768px) {
+
+    #OurWorks{
+        width: 100%;
+        height: auto;
+        padding: 5rem 0 0 0;
+    }
+
+    .projectsGrid {
+        width: 100%;
+        height: auto;
+        padding: 2rem 4rem 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

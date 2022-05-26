@@ -9,7 +9,7 @@ import './OurServices.css'
 const OurServices = () => {
   return (
     <>
-        <section id='OurServices'>
+        <section id='OurServices'> 
             <div className='advantages'>
                 <AdvantageComponent/>
                 <AdvantageComponent/>
