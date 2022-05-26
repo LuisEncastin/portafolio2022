@@ -1,7 +1,9 @@
 import React from 'react'
+import AboutUs from '../../Sections/AboutUs/AboutUs'
 
 // Componentes
 import Intro from '../../Sections/Intro/Intro'
+import OurPrices from '../../Sections/OurPrices/OurPrices'
 import OurServices from '../../Sections/OurServices/OurServices'
 import OurWorks from '../../Sections/OurWorks/OurWorks'
 
@@ -15,7 +17,8 @@ const Home = () => {
       <Intro/>
       <OurServices/>
       <OurWorks/>
-
+      <AboutUs/>
+      <OurPrices/>
     </section>
     </>
   )

@@ -1,0 +1,105 @@
+#ourPrices{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 0 0;
+    background-color: lightslategray;
+}
+.ourPricesWrapper{
+    width: 100%;
+    outline: 1px solid green;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.ourPricesWrapper h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.ourPricesWrapper p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.buttonsContainer{
+    width: 100%;
+    outline: 1px solid blue;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 50rem;
+}
+.buttonsContainer button{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+    outline: 1px solid greenyellow;
+    border-radius: 20px;
+    color: lightslategrey;
+}
+.buttonsContainer button:hover{
+    background-color: greenyellow;
+    color: white;
+    transition: 0.3s;
+}
+.pricesContainer{
+    width: 100%;
+    height: auto;
+    outline: 1px solid lightseagreen;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 52rem 6rem;
+}
+.priceCard{
+    width: 100%;
+    height: 600px;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    .ourPricesWrapper{
+        padding: 1rem 1.5rem;
+    }
+    .buttonsContainer{
+        width: 100%;
+        outline: 1px solid blue;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem 4.5rem;
+    }
+    .buttonsContainer button{
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+        background-color: white;
+        border: none;
+        outline: 1px solid greenyellow;
+        border-radius: 20px;
+        color: lightslategrey;
+    }
+    .buttonsContainer button:hover{
+        background-color: greenyellow;
+        color: white;
+        transition: 0.3s;
+    }
+    .pricesContainer{
+        width: 100%;
+        height: auto;
+        outline: 1px solid lightseagreen;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem 6rem;
+    }
+}
