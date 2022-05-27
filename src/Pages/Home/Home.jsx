@@ -6,7 +6,7 @@ import ContactUs from '../../Sections/ContactUs/ContactUs'
 import Intro from '../../Sections/Intro/Intro'
 import OurPrices from '../../Sections/OurPrices/OurPrices'
 import OurServices from '../../Sections/OurServices/OurServices'
-import OurWorks from '../../Sections/OurWorks/OurWorks'
+// import OurWorks from '../../Sections/OurWorks/OurWorks'
 
 // styles
 import './Home.css'
@@ -17,7 +17,7 @@ const Home = () => {
     <section id='Home'>
       <Intro/>
       <OurServices/>
-      <OurWorks/>
+      {/* <OurWorks/> */}
       <AboutUs/>
       <OurPrices/>
       <ContactUs/>

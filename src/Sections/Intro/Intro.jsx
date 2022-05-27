@@ -17,7 +17,7 @@ const Intro = () => {
                 <h1>We are a creative agency</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero numquam cupiditate exercitationem velit repellat.</p>
                 <button>Get started</button>  
-            </div>  
+            </div>   
         </div>
     </section>
     </>

@@ -10,17 +10,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 15rem 4rem 5rem 90rem;
 }
 .introWrapper{
-    width: 100%;
+    width: 50rem;
     height: auto;
+    position: absolute;
+    top: 25rem;
+    right: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     padding: 3rem;
-    background-color: var(--mainGreen);
+    background-color: var(--mainColor);
     border-radius: 15px;
     color: var(--mainBlack);
     box-shadow: var(--secondaryBoxShadow);
@@ -50,7 +52,7 @@
 
 .introWrapper button:hover{
     /* background-color: var(--mainGreen); */
-    transform: scale(1.02);
+    transform: scale(1.02); 
     transition: 0.3s;
 }
 

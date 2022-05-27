@@ -2,12 +2,11 @@
     width: 100%;
     height: auto;
     padding: 5rem 0 0 0;
-    background-color: aquamarine;
+    background-color: var(--mainBgGray);
 }
 
 .aboutUsWrapper{
     width: 100%;
-    outline: 1px solid green;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -37,12 +36,11 @@
 .aboutUsDescription{
     width: 50rem;
     height: 30rem;
-    outline: 1px solid red;
+    outline: 1px solid green;
 }
 .aboutUsImage{
     width: 50rem;
     height: 30rem;
-    outline: 1px solid blue;
 }
 
 @media (max-width: 768px) {
@@ -66,14 +64,12 @@
     .aboutUsDescription{
         width: 35rem;
         height: 30rem;
-        outline: 1px solid red;
         padding: 2rem;
         margin-bottom: 3rem;
     }
     .aboutUsImage{
         width: 35rem;
         height: 30rem;
-        outline: 1px solid blue;
         padding: 2rem;
     }
 }

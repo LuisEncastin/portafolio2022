@@ -8,7 +8,7 @@ const AboutUs = () => {
     <>
     <section id='aboutUs'>
         <div className='aboutUsWrapper'>
-            <h1>Sobre nosotros</h1>
+            <h1>Sobre mí</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum non <br /> 
             asperiores ratione cumque iure!</p>
         </div>
