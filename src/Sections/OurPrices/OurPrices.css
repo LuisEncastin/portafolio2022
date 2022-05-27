@@ -30,11 +30,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 50rem;
+    padding: 2rem;
+}
+.buttonsContainer-buttons{
+    width: 350px;
+    height: auto;
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 .buttonsContainer button{
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     background-color: white;
     border: none;
     outline: 1px solid greenyellow;
@@ -55,10 +64,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 52rem 6rem;
+    padding: 0 0 6rem;
 }
 .priceCard{
-    width: 100%;
+    width: 345px;
     height: 600px;
     background-color: antiquewhite;
 }
@@ -101,5 +110,10 @@
         align-items: center;
         justify-content: center;
         padding: 0 1.5rem 6rem;
+    }
+    .priceCard{
+        width: 345px;
+        height: 600px;
+        background-color: antiquewhite;
     }
 }

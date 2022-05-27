@@ -1,0 +1,128 @@
+#contactUs{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 0 0;
+    background-color: lightseagreen;
+}
+
+.contactUsWrapper{
+    width: 100%;
+    outline: 1px solid green;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.contactUsWrapper h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contactUsWrapper p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contactMainContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    outline: 1px solid orange;
+    padding-bottom: 6rem;
+}
+
+/* social media container */
+
+.socialMediaContainer{
+    width: 400px;
+    height: 400px;
+    outline: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* form */
+
+.formContainer{
+    width: 650px;
+    height: auto;
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 100%;
+    height: auto;
+}
+
+.formInputsContainer{
+    width: 100%;
+    height: 50px;
+    outline: 1px solid salmon;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+
+.contactFormInput{
+    width: 100%;
+    outline: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFormInput .input{
+    width: 95%;
+    height: 4.5rem;
+}
+
+.contactFormInput .input-message{
+    width: 98%;
+    height: 15rem;
+}
+
+.buttonFormContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonFormContainer button{
+    margin: 2rem 0 3rem;
+    width: 15rem;
+    height: 5rem;
+
+}
+
+@media (max-width: 768px) {
+    
+    .contactMainContainer{
+        flex-direction:column-reverse;
+    }
+
+    .formContainer{
+        width: 340px;
+    }
+
+    .socialMediaContainer{
+        width: 300px;
+    }
+
+}

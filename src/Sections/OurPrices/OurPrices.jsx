@@ -13,8 +13,10 @@ const OurPrices = () => {
                 asperiores ratione cumque iure!</p>
             </div>
             <div className='buttonsContainer'>
-                <button>Desarrollo web</button>
-                <button>Marketing digital</button>
+                <div className='buttonsContainer-buttons'>
+                    <button>Desarrollo web</button>
+                    <button>Marketing digital</button>
+                </div>
             </div>
             <div className='pricesContainer'>
                 <div className='priceCard'>priceCard</div>

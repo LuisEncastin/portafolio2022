@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutUs from '../../Sections/AboutUs/AboutUs'
+import ContactUs from '../../Sections/ContactUs/ContactUs'
 
 // Componentes
 import Intro from '../../Sections/Intro/Intro'
@@ -19,6 +20,7 @@ const Home = () => {
       <OurWorks/>
       <AboutUs/>
       <OurPrices/>
+      <ContactUs/>
     </section>
     </>
   )
