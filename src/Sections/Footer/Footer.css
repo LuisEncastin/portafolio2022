@@ -26,6 +26,13 @@
     color: #2F89FC;
 }
 
+.endBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
 
 .page-footer .copyright{
     width: 100%;
@@ -34,6 +41,22 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.socialMediaButtons{
+    height: 30px;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.rsIcon{
+    width: 3rem;
+    height: 3rem;
+    background-color: gray;
+    border-radius: 51%;
 }
 
 @media (max-width: 768px) {

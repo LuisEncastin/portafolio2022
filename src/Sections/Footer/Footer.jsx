@@ -59,22 +59,20 @@ const Footer = () => {
 
       <hr/>
 
-      <div className="row mt-4">
-        <div className="col-md-6 copyright">
-          
+      <div className="endBar">
+        <div className="copyright">
           <p><strong>Copyright 2022.</strong><br />
-          Website designed by<a href="/" target="_blank"> Luis Encastin</a></p>
+          Website designed by<a href="/" target="_blank"> Luis Encastin</a>
+          </p>
         </div>
-        {/* <div className="col-md-6 text-right">
-          <div className="sosmed-button">
-            <a href="/"><span className="mai-logo-facebook-f"></span></a>
-            <a href="/"><span className="mai-logo-twitter"></span></a>
-            <a href="/"><span className="mai-logo-youtube"></span></a>
-            <a href="/"><span className="mai-logo-linkedin"></span></a>
+        <div className="socialMediaButtons">
+            <a href="/" className='rsIconC'><div className="rsIcon facebook"></div></a>
+            <a href="/" className='rsIconC'><div className="rsIcon twitter"></div></a>
+            <a href="/" className='rsIconC'><div className="rsIcon youtube"></div></a>
+            <a href="/" className='rsIconC'><div className="rsIcon linkedin"></div></a>
           </div>
-        </div> */}
+        </div>
       </div>
-    </div>
   </footer>
     </>
   )

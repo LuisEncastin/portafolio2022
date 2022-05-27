@@ -12,7 +12,7 @@ const AdvantageComponent = () => {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, illo.</p>
     </div>
     </>
-  )
+  ) 
 }
 
 export default AdvantageComponent

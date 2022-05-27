@@ -2,6 +2,7 @@ import React from 'react'
 
 // components
 import AdvantageComponent from '../../Components/AdvantageComponent/AdvantageComponent'
+import ServiceComponent from '../../Components/ServiceComponent/ServiceComponent'
 
 // estilos
 import './OurServices.css'
@@ -21,12 +22,12 @@ const OurServices = () => {
                  saepe repudiandae repellendus natus recusandae illo ducimus.</p> 
             </div>
             <div className='servicesGrid'>
-                <div class="service1 service"> service1 </div>
-                <div class="service2 service"> service2 </div>
-                <div class="service3 service"> service3 </div>
-                <div class="service4 service"> service4 </div>
-                <div class="service5 service"> service5 </div>
-                <div class="service6 service"> service6 </div>
+                <ServiceComponent class="service1 service"/>
+                <ServiceComponent class="service2 service"/>
+                <ServiceComponent class="service3 service"/>
+                <ServiceComponent class="service4 service"/>
+                <ServiceComponent class="service5 service"/>
+                <ServiceComponent class="service6 service"/>
             </div>
         </section>
     </>

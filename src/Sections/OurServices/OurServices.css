@@ -8,7 +8,6 @@
     width: 100%;
     height: 200px;
     padding: 0 10rem;
-    outline: 1px solid blue;
     position: absolute;
     bottom: -150px;
     left: 0;
@@ -24,7 +23,6 @@
 
 .ourServicesWrapper{
     width: 100%;
-    outline: 1px solid green;
     height: auto;
     display: flex;
     flex-direction: column;

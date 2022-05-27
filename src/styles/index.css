@@ -11,11 +11,19 @@ html{
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+} 
 
 /* general styles */
 
 :root {
+  --mainBoxShadow: 0px 4px 6px 5px #1a1a1add;
+  --secondaryBoxShadow: 0px 2px 4px 1px #adacac;
+  --innerBoxShadow: inset -4px -5px 7px -6px #adacac;
+  --mainGreen: #a4cf3b;
+  --mainStrongGreen: #93ab31;
+  --mainGray:#d9d9d9;
+  --mainBlack: #272a28;
+  --mainFontGray: #f1f1f1;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // assets
-import introBgImage from '../../assets/bg_image_1.jpg'
+import introBgImage from '../../assets/images/pexels-arina-krasnikova-5950165.jpg'
 
 // estilos
 import './Intro.css'

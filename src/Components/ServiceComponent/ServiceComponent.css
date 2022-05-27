@@ -1,0 +1,34 @@
+.serviceComponentWrapper{
+    border-radius: 20px;
+    width: 35rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 0 2rem;
+    text-align: center;
+    border:1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    
+    .serviceComponentWrapper{
+        border-radius: 20px;
+        width: 35rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .serviceComponentWrapper:hover{
+        background-color: whitesmoke;
+        color: var(--mainBlack);
+        transition: 0.3s;
+    }
+
+}
