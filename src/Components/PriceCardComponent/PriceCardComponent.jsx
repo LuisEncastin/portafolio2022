@@ -31,7 +31,7 @@ const PriceCardComponent = () => {
                 <div className='listItem'> <i>'/'</i> <p>Servicio</p> </div>
                 <div className='listItem'> <i>'/'</i> <p>Servicio</p> </div>
             </div>
-            <div>
+            <div className='buttonBox'>
                 <button>Continuar</button>
             </div>
         </div>

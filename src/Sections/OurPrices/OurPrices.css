@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 .buttonsContainer-buttons{
     width: 500px;
@@ -77,22 +78,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 2rem 0rem;
+        padding: 2rem 0rem 0;
     }
 
     .buttonsContainer button{
         padding: 1rem 1rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
+        font-weight: 700;
         background-color: white;
         border: none;
-        outline: 1px solid greenyellow;
+        outline: 3px solid var(--mainColor);
         border-radius: 20px;
-        color: lightslategrey;
+        color: var(--mainFontGray);
     }
     .buttonsContainer button:hover{
-        background-color: greenyellow;
-        color: white;
-        transition: 0.3s;
+        background-color: var(--mainColor);
+        color: var(--mainBlack);
+        outline: 3px solid white;
+        transition: 0.5s;
     }
     .pricesContainer{
         width: 100%;

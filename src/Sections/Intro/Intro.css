@@ -73,12 +73,18 @@
     }
     .introWrapper{
         position: absolute;
-        width: 30rem;
-        top: 10rem;
-        right: 4rem;
+        width: 35rem;
+        top: 2rem;
+        right: 1rem;
         color: white;
         background-color: transparent;
         border: none;
         box-shadow: none;
+    }
+    .introWrapper h2{
+        padding: 2rem 0 0 0 ;
+    }
+    .introWrapper button{
+        align-self: center;
     }
 }

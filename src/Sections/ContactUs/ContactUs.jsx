@@ -1,5 +1,8 @@
 import React, {useRef} from 'react'
 
+// assets
+import dummy from '../../assets/icons/instagram-24.png'
+
 // styles
 import './ContactUs.css'
 
@@ -21,13 +24,35 @@ const ContactUs = () => {
       <section id='contactUs'>
         <div className='contactUsWrapper'>
             <h1>Contáctanos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum non <br /> 
-            asperiores ratione cumque iure!</p>
+            <p>Si tienes alguna pregunta acerca de mis servicios, puedes contactarme.</p>
         </div>
         <div className="contactMainContainer">
-          <div className='socialMediaContainer'>
-            <p>social media container</p>
+          <div className='contactLeftContainer'>
+            <div className='contactLeftBox contactAddress'>
+              <img src={dummy} alt="direccion" />
+              <div>
+                <h1>Dirección</h1>
+                <p>Toluca, Estado de México</p>
+              </div>
+            </div>
+            <div className='contactLeftBox contactEmail'>
+              <img src={dummy} alt="correo" />
+              <div>
+                <h1>Correo</h1>
+                <p>contacto@luisencastin.com</p>
+              </div>
+            </div>
+            <div className='contactLeftBox contactPhone'>
+              <img src={dummy} alt="telefono" />
+              <div>
+                <h1>Teléfono</h1>
+                <p>722 5 63 48 12</p>
+              </div>
+            </div>
+
           </div>
+
+
           <div className='formContainer'>
 
             <form action="/" className='form' ref={form}> 

@@ -23,11 +23,9 @@ const OurPrices = () => {
                 </div>
             </div>
             <div className='pricesContainer'>
-                <PriceCardComponent
-                
-                />
-                <div className='priceCard'>priceCard</div>
-                <div className='priceCard'>priceCard</div>
+                <PriceCardComponent/>
+                <PriceCardComponent/>
+                <PriceCardComponent/>
             </div>
         </section> 
     </>
