@@ -12,10 +12,10 @@
     background-size: cover;
 }
 .introWrapper{
-    width: 50rem;
+    width: 58rem;
     height: auto;
     position: absolute;
-    top: 25rem;
+    top: 22rem;
     right: 5rem;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .introWrapper h2{
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem 0 0 0 ;
 }
 
@@ -64,7 +64,7 @@
     .introLayer{
         content: "";
         background-color: rgba(0,0,0,.5);
-        opacity: 50%;
+        opacity: 90%;
         position: absolute;
         left: 0;
         top: 10;
@@ -72,8 +72,13 @@
         height: 50rem;
     }
     .introWrapper{
-        position: relative;
-        width: 100%;
-
+        position: absolute;
+        width: 30rem;
+        top: 10rem;
+        right: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
     }
 }

@@ -16,14 +16,15 @@ html{
 /* general styles */
  
 :root {
-  --mainBoxShadow: 0px 4px 6px 5px #1a1a1add;
+  --mainBoxShadow: 0 0 12px 0 rgba(0,0,0,.1);
+  --darkBoxShadow: 0px 4px 6px 5px #1a1a1add;
   --secondaryBoxShadow: 0px 2px 4px 1px #adacac;
   --innerBoxShadow: inset -4px -5px 7px -6px #adacac;
   --mainColor: #ffc629;
   --mainStrongColor: #f9c647;
   --mainBgGray:#f5f8f9;
   --mainBlack: #272a28;
-  --mainFontGray: #f1f1f1;
+  --mainFontGray: slategray;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;

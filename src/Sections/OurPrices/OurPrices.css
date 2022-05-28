@@ -2,17 +2,16 @@
     width: 100%;
     height: auto;
     padding: 5rem 0 0 0;
-    background-color: lightslategray;
+    background-color: white;
 }
 .ourPricesWrapper{
     width: 100%;
-    outline: 1px solid green;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem 0;
+    padding: 6rem 0 1rem;
 }
 .ourPricesWrapper h1{
     font-size: 4rem;
@@ -24,7 +23,6 @@
 }
 .buttonsContainer{
     width: 100%;
-    outline: 1px solid blue;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -33,9 +31,8 @@
     padding: 2rem;
 }
 .buttonsContainer-buttons{
-    width: 350px;
+    width: 500px;
     height: auto;
-    outline: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,51 +40,48 @@
 }
 .buttonsContainer button{
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     background-color: white;
     border: none;
-    outline: 1px solid greenyellow;
+    outline: 3px solid var(--mainColor);
     border-radius: 20px;
-    color: lightslategrey;
+    color: var(--mainFontGray);
 }
 .buttonsContainer button:hover{
-    background-color: greenyellow;
-    color: white;
-    transition: 0.3s;
+    background-color: var(--mainColor);
+    color: var(--mainBlack);
+    outline: 3px solid white;
+    transition: 0.5s;
 }
 .pricesContainer{
     width: 100%;
-    height: auto;
-    outline: 1px solid lightseagreen;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 0 6rem;
-}
-.priceCard{
-    width: 345px;
-    height: 600px;
-    background-color: antiquewhite;
+    padding: 0 0 2rem;
 }
 
 @media (max-width: 768px) {
     .ourPricesWrapper{
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem;
+        text-align: center;
     }
-    .buttonsContainer{
-        width: 100%;
-        outline: 1px solid blue;
+    .buttonsContainer-buttons{
+        width: 350px;
+        font-size: 1rem;
         height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 2rem 4.5rem;
+        padding: 2rem 0rem;
     }
+
     .buttonsContainer button{
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
         font-size: 1.3rem;
         background-color: white;
         border: none;
@@ -103,17 +97,10 @@
     .pricesContainer{
         width: 100%;
         height: auto;
-        outline: 1px solid lightseagreen;
-        height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0 1.5rem 6rem;
-    }
-    .priceCard{
-        width: 345px;
-        height: 600px;
-        background-color: antiquewhite;
     }
 }

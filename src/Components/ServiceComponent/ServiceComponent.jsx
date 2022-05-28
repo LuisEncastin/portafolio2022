@@ -3,13 +3,18 @@ import React from 'react'
 // styles
 import './ServiceComponent.css'
 
-const ServiceComponent = () => {
+const ServiceComponent = ({
+  estilos,
+  serviceIcon,
+  nombreServicio,
+  descripcionServicio,
+}) => {
   return (
     <>
-    <div className='serviceComponentWrapper'>
-        <img src="/" alt="serviceIcon" />
-        <h1>Service title</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, illo.</p>
+    <div className={estilos}>
+        <img src={serviceIcon} alt="serviceIcon" />
+        <h1>{nombreServicio}</h1>
+        <p>{descripcionServicio}</p>
     </div>
     </>
   )
