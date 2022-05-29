@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 // assets
+import logo from '../../assets/images/logos/oie_transparent.png'
 import burguerMenuIcon from '../../assets/icons/burguerMenuIcon.png'
 
 // styles
@@ -12,7 +13,7 @@ const NavBar = () => {
     return (
       <nav className="navigation">
         <a href="/" className="brand-name">
-          Luis Encastin
+          <img src={logo} alt="Logotipo" className='logotipo'/>
         </a>
         <button
           className="hamburger"

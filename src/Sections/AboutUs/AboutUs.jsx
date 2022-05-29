@@ -11,7 +11,7 @@ const AboutUs = () => {
     <>
     <section id='aboutUs'>
         <div className='aboutUsWrapper'>
-            <h1>Nuestro talento</h1>
+            <h1>Sobre mí</h1>
             <p>Soy un <strong>desarrollodor web fullstack</strong> con experiencia en el stack <strong>MERN: MongoDB, Express, ReactJS and Node.js </strong> </p>
         </div>
         <div className='aboutUsInfo'>

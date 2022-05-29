@@ -52,9 +52,17 @@
 }
 
 .contactLeftBox img{
-    width: 4rem;
-    height: 4rem;
+    width: 8rem;
+    height: 8rem;
+    padding: 2rem;
     margin: 0rem 3rem 1rem 1rem;
+    border: 1px solid var(--mainFontGray);
+    border-radius: 51%;
+}
+
+.contactLeftBox img:hover{
+    background-color: var(--mainColor);
+    transition: 0.7s;
 }
 
 .contactLeftBox p {

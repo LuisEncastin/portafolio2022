@@ -6,13 +6,29 @@
     align-items: center;
     height: 60px;
     width: 100%;
-    padding: 1rem 5rem 0;
+    padding: 0rem 5rem 0 10rem;
     font-size: 2rem;
     background-color: white;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
   
+.navigation .brand-name{
+  width: 12rem;
+  height: auto;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation .brand-name .logotipo{
+  width: 10rem;
+  height: 5rem;
+}
+
   .brand-name {
     text-decoration: none;
     color: black;
@@ -22,6 +38,7 @@
   
   .navigation-menu {
     margin-left: auto;
+    padding: 1rem 0 0 0;
   }
   
   .navigation-menu ul {

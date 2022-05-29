@@ -41,8 +41,7 @@ const OurServices = () => {
             </div>
             <div className='ourServicesWrapper'>
                 <h1>Servicios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa perferendis optio reiciendis <br/>
-                 saepe repudiandae repellendus natus recusandae illo ducimus.</p> 
+                <p>A continuación se describen los principales servicios de desarrollo web que se ofrecen:</p> 
             </div>
             <div className='servicesGrid'>
                 {/* <div className='service1 service'></div> */}

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // assets
-// import logo from '../../assets/img/CiplaLogo.jpeg';
+import logo from '../../assets/images/logos/oie_transparent.png'
 import linkedin from '../../assets/icons/linkedin.png'
 import github from '../../assets/icons/github.png'
 import whatsapp from '../../assets/icons/whatsapp.png'
@@ -16,9 +16,14 @@ const Footer = () => {
  <footer className="page-footer">
     <div className="container">
       <div className="row">
-        <div className="col-lg-3 py-3">
-          {/* <Link to="/" className="navbar-brand"><img src={logo} alt="Logo Cipla Abogados" /></Link> */}
+        <div className='circle'>
+          <div className="logoContainer">
+            <a href="/" className="brand-name">
+              <img src={logo} alt="Logotipo" className='logotipo'/>
+            </a>
+          </div>
         </div>
+
         <div className="col-lg-3 py-3">
           <h5>Contacto</h5>
           <p>Dirección</p>
