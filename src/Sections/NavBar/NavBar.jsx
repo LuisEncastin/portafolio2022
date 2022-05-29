@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 
+// assets
+import burguerMenuIcon from '../../assets/icons/burguerMenuIcon.png'
+
 // styles
 import './NavBar.css'
 
@@ -17,19 +20,7 @@ const NavBar = () => {
             setIsNavExpanded(!isNavExpanded);
           }}
         >
-          {/* icon from Heroicons.com */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="white"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <img src={burguerMenuIcon} alt="hamburguerIcon" />
         </button>
         <div
           className={
@@ -37,15 +28,18 @@ const NavBar = () => {
           }
         >
           <ul>
-            <li>
-              <a href="/home">Home</a>
+          <li className="nav-item">
+              <a href="#OurServices" className="nav-link">Servicios</a>
             </li>
-            <li>
-              <a href="/about">About</a>
+            <li className="nav-item">
+              <a href="#aboutUs" className="nav-link">Sobre mí</a>
             </li>
-            <li>
-              <a href="/contact">Contact</a>
+            <li className="nav-item">
+              <a href="#ourPrices" className="nav-link">Precios</a>
             </li>
+            <li className="nav-item">
+              <a href="#contactUs" className="nav-link">Contacto</a>
+            </li> 
           </ul>
         </div>
       </nav>

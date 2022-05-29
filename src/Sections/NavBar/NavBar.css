@@ -51,23 +51,26 @@
   
   .hamburger {
     border: 0;
-    height: 40px;
-    width: 40px;
+    height: 5rem;
+    width: 5rem;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #283b8b;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
     position: absolute;
     top: 50%;
     right: 25px;
     transform: translateY(-50%);
     display: none;
+    background-color: var(--mainColor);
+  }
+
+  .hamburger img{
+    width: 4rem;
+    height: 4rem;
   }
   
-  .hamburger:hover {
-    background-color: #2642af;
-  }
+  /* .hamburger:hover {
+  } */
   
   @media screen and (max-width: 550px) {
     .hamburger {
@@ -94,12 +97,14 @@
     .navigation-menu li {
       text-align: center;
       margin: 0;
+      padding: 1rem 0 0 0;
     }
   
     .navigation-menu li a {
       color: black;
       width: 100%;
-      padding: 1.5rem 0;
+      padding: 1rem 0;
+      font-size: 2rem;
     }
   
     .navigation-menu li:hover {

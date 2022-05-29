@@ -1,8 +1,8 @@
 import React from 'react';
 
 // icons advantages
+import features from '../../assets/icons/archery-64.png';
 import design from '../../assets/icons/diseño-64.png';
-import features from '../../assets/icons/features-48.png';
 import support from '../../assets/icons/support-64.png';
 
 // icons services

@@ -41,7 +41,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0 7rem 10rem;
+    padding: 1rem 0 16rem 10rem;
 }
 
 .contactLeftBox{
@@ -52,9 +52,9 @@
 }
 
 .contactLeftBox img{
-    width: 5rem;
-    height: 5rem;
-    margin: 1rem 2rem 1rem 1rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem 3rem 1rem 1rem;
 }
 
 .contactLeftBox p {
@@ -141,7 +141,7 @@
     }
 
     .contactLeftContainer{
-        padding: 0 5rem;
+        padding: 0 5rem 0 6rem;
     }
 
     .formContainer{

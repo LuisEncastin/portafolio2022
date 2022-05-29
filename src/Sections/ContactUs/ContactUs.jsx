@@ -1,7 +1,9 @@
 import React, {useRef} from 'react'
 
 // assets
-import dummy from '../../assets/icons/instagram-24.png'
+import location from '../../assets/icons/location.png';
+import email from '../../assets/icons/email.png';
+import phone from '../../assets/icons/phone.png';
 
 // styles
 import './ContactUs.css'
@@ -29,21 +31,21 @@ const ContactUs = () => {
         <div className="contactMainContainer">
           <div className='contactLeftContainer'>
             <div className='contactLeftBox contactAddress'>
-              <img src={dummy} alt="direccion" />
+              <img src={location} alt="direccion" />
               <div>
                 <h1>Dirección</h1>
                 <p>Toluca, Estado de México</p>
               </div>
             </div>
             <div className='contactLeftBox contactEmail'>
-              <img src={dummy} alt="correo" />
+              <img src={email} alt="correo" />
               <div>
                 <h1>Correo</h1>
                 <p>contacto@luisencastin.com</p>
               </div>
             </div>
             <div className='contactLeftBox contactPhone'>
-              <img src={dummy} alt="telefono" />
+              <img src={phone} alt="telefono" />
               <div>
                 <h1>Teléfono</h1>
                 <p>722 5 63 48 12</p>

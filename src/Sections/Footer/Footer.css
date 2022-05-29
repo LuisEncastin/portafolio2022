@@ -23,7 +23,7 @@
 }
 .page-footer .footer-menu li a:hover{
     text-decoration: none;
-    color: #2F89FC;
+    color: var(--mainColor);
 }
 
 .endBar{
@@ -32,6 +32,10 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
+}
+
+.endBar .author{
+    color: var(--mainColor);
 }
 
 .page-footer .copyright{
@@ -55,7 +59,7 @@
 .rsIcon{
     width: 3rem;
     height: 3rem;
-    background-color: gray;
+    background-color: var(--mainColor);
     border-radius: 51%;
 }
 

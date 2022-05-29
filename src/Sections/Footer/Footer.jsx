@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 // assets
 // import logo from '../../assets/img/CiplaLogo.jpeg';
+import linkedin from '../../assets/icons/linkedin.png'
+import github from '../../assets/icons/github.png'
+import whatsapp from '../../assets/icons/whatsapp.png'
  
 // styles
 import './Footer.css'
@@ -19,28 +22,27 @@ const Footer = () => {
         <div className="col-lg-3 py-3">
           <h5>Contacto</h5>
           <p>Dirección</p>
-          <p>Av. Paseo Tollocan, #1213, Colonia El Seminario, C.P. 50170, Toluca, Estado de México.</p>
-          <p>Email: contacto@ciplabogados.com</p>
-          <p>Teléfonos de oficina: <br/>
-           +52 722 2 80 97 76 <br/>
-           +52 722 5 67 67 32  <br/>
-           55 62 22 14 27  <br/>
+          <p>Toluca, Estado de México.</p>
+          <p>Email: contacto@luisencastin.com <br />
+          luisencastin@gmail.com </p>
+          <p>Teléfonos de contacto: <br/>
+           +52 722 5 63 48 12 <br/>
            </p>
         </div>
         <div className="col-lg-3 py-3">
           <h5>Navegación</h5>
           <ul className="footer-menu">
             <li className="nav-item">
-              <Link to="/nosotros" className="nav-link">Sobre nosotros</Link>
+              <a href="#OurServices" className="nav-link">Servicios</a>
             </li>
             <li className="nav-item">
-              <Link to="/servicios" className="nav-link">Servicios</Link>
+              <a href="#aboutUs" className="nav-link">Sobre mí</a>
             </li>
             <li className="nav-item">
-              <Link to="/contratos" className="nav-link">Contratos</Link>
+              <a href="#ourPrices" className="nav-link">Precios</a>
             </li>
             <li className="nav-item">
-              <Link to="/contacto" className="nav-link">Contacto</Link>
+              <a href="#contactUs" className="nav-link">Contacto</a>
             </li> 
           </ul>
         </div>
@@ -48,10 +50,10 @@ const Footer = () => {
           <h5>Legal</h5>
           <ul className="footer-menu">
             <li className="nav-item">
-              <Link to="/terminos-y-condiciones" target="_blank">Términos y condiciones</Link>
+              <a href="/" target="_blank">Términos y condiciones</a>
             </li>
             <li className="nav-item">
-              <Link to="/aviso-de-privacidad" target="_blank">Aviso de privacidad</Link>
+              <a href="/" target="_blank">Aviso de privacidad</a>
             </li>
           </ul>
         </div>
@@ -62,14 +64,19 @@ const Footer = () => {
       <div className="endBar">
         <div className="copyright">
           <p><strong>Copyright 2022.</strong><br />
-          Website designed by<a href="/" target="_blank"> Luis Encastin</a>
+          Website designed by<a href="/" target="_blank" className='author'> Luis Encastin</a>
           </p>
         </div>
         <div className="socialMediaButtons">
-            <a href="/" className='rsIconC'><div className="rsIcon facebook"></div></a>
-            <a href="/" className='rsIconC'><div className="rsIcon twitter"></div></a>
-            <a href="/" className='rsIconC'><div className="rsIcon youtube"></div></a>
-            <a href="/" className='rsIconC'><div className="rsIcon linkedin"></div></a>
+            <a href="/" className='rsIconC'>
+              <img src={linkedin} className="rsIcon linkedin" alt="Linkedin" />
+            </a>
+            <a href="/" className='rsIconC'>
+              <img src={github} className="rsIcon github" alt="github" />
+            </a>
+            <a href="https://wa.me/+5217225634812" target="_blank" rel="noopener noreferrer" className='rsIconC'>
+              <img src={whatsapp} className="rsIcon whatsapp" alt="whatsapp" />
+            </a>
           </div>
         </div>
       </div>
