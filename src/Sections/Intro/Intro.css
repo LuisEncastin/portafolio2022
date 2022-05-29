@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: darken;
 }
 .introWrapper{
     width: 58rem;
@@ -22,10 +23,12 @@
     justify-content: center;
     align-items: flex-end;
     padding: 3rem;
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
     border-radius: 15px;
-    color: var(--mainBlack);
-    box-shadow: var(--secondaryBoxShadow);
+    /* color: var(--mainBlack); */
+    color: white;
+    /* box-shadow: var(--secondaryBoxShadow); */
+
 }
 
 .introWrapper h2{
@@ -43,48 +46,52 @@
     padding: 0 0 1rem 0;
 }
 
+.introWrapper .strong{
+    color: var(--mainColor);
+}
+
 .introWrapper button{
     font-size: 1.5rem;
     padding: 1rem 5rem;
     border: none;
     border-radius: 8px;
+    background-color: var(--mainColor);
 }
 
 .introWrapper button:hover{
     /* background-color: var(--mainGreen); */
-    transform: scale(1.02); 
+    background-color: var(--mainBgGray);
     transition: 0.3s;
 }
 
 @media (max-width: 768px) {
     .introBackground{
-        height: 50rem;
-        padding: 10rem 2rem 5rem 2rem;
-    }
-    .introLayer{
-        content: "";
-        background-color: rgba(0,0,0,.5);
-        opacity: 90%;
-        position: absolute;
-        left: 0;
-        top: 10;
         width: 100%;
         height: 50rem;
+        padding: 3rem 0rem 5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .introWrapper{
-        position: absolute;
-        width: 35rem;
-        top: 2rem;
-        right: 1rem;
+        position: initial;
+        width: 100%;
         color: white;
         background-color: transparent;
         border: none;
         box-shadow: none;
     }
+    /* .introWrapper .strong{
+        color: var(--mainColor);
+    } */
     .introWrapper h2{
         padding: 2rem 0 0 0 ;
     }
     .introWrapper button{
         align-self: center;
+        background-color: var(--mainColor);
+        color: var(--mainBlack);
+        padding: 1rem 4rem;
     }
 }

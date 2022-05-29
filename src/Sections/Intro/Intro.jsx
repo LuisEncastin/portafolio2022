@@ -10,17 +10,16 @@ const Intro = () => {
   return (
     <>
     <section id='Intro'>
-        <div className='introLayer'></div>
         <div className='introBackground' style={{backgroundImage: `url(${introBgImage})`}} >
             <div className='introWrapper'>
                 <h2>¡Hola!</h2>
-                <h1>Soy <strong style={{color:"white"}}>LUIS ENCASTIN</strong>,
+                <h1>Soy <strong className='strong'>LUIS ENCASTIN</strong>,
                  <br/> desarrollador web Fullstack.
                 </h1>
                 <p>Disfruto construir diferentes proyectos inspiradores, desde proyectos para negocios locales hasta aplicaciones web a la medida de la mano de equipos globales. <br /> 
                 La innovación es mi pasión.</p>
                 <button>Conoce más de mi trabajo</button>  
-            </div>   
+            </div> 
         </div>
     </section>
     </>
