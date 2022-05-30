@@ -30,7 +30,7 @@ const Footer = () => {
           <p>Toluca, Estado de México.</p>
           <p>Email: contacto@luisencastin.com <br />
           luisencastin@gmail.com </p>
-          <p>Teléfonos de contacto: <br/>
+          <p>Teléfono de contacto: <br/>
            +52 722 5 63 48 12 <br/>
            </p>
         </div>

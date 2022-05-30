@@ -68,12 +68,18 @@
 }
 
 .aboutUsDescription button {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem 5rem;
     border: none;
     border-radius: 8px;
     background-color: var(--mainColor);
     margin-top: 2rem;
+}
+
+.aboutUsDescription button:hover{
+    background-color: white;
+    box-shadow: var(--mainBoxShadow);
+    transition: 0.3s;
 }
 
 @media (max-width: 768px) {

@@ -96,6 +96,7 @@
 
     .navigation{
         background-color: var(--mainColor);
+        padding: 0rem 5rem 0 1rem;
     }
   
     .navigation-menu ul {
