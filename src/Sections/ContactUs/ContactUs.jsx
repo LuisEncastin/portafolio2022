@@ -26,7 +26,7 @@ const ContactUs = () => {
     <>
       <section id='contactUs'>
         <div className='contactUsWrapper'>
-            <h1>Contáctanos</h1>
+            <h1>Contáctame</h1>
             <p>Si tienes alguna pregunta acerca de mis servicios, puedes contactarme.</p>
         </div>
         <div className="contactMainContainer">

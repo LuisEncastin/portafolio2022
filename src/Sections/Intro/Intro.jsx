@@ -19,7 +19,7 @@ const Intro = () => {
                 <p>Disfruto construir diferentes proyectos inspiradores, <br />
                  desde proyectos para negocios locales hasta aplicaciones web a la medida de la mano de equipos globales. 
                 La innovación es mi pasión.</p>
-                <button>Conoce más de mi trabajo</button>  
+                <button><a href="#aboutUs">Conoce más de mi trabajo</a></button>  
             </div> 
         </div>
     </section>

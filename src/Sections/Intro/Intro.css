@@ -58,6 +58,11 @@
     background-color: var(--mainColor);
 }
 
+.introWrapper button a{
+    text-decoration: none;
+    color: var(--mainBlack);
+}
+
 .introWrapper button:hover{
     /* background-color: var(--mainGreen); */
     background-color: var(--mainBgGray);

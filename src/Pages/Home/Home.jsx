@@ -22,7 +22,7 @@ const Home = () => {
       <OurPrices/>
       <ContactUs/>
     </section>
-    </>
+    </> 
   )
 }
 

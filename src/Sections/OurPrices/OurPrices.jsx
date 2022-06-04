@@ -124,9 +124,9 @@ const OurPrices = () => {
     <>
         <section id='ourPrices'>
             <div className='ourPricesWrapper'>
-                <h1>Nuestro precios</h1>
-                <p>Conoce los diferentes <strong>servicios</strong> que ofrecemos y los diferentes <strong>planes de negocio</strong> <br />
-                 que hemos creado según tus necesidades.</p>
+                <h1>Precios</h1>
+                <p>Conoce los diferentes <strong>servicios</strong> que ofrezco y los diferentes <strong>planes de negocio</strong> <br />
+                 diseñador para cumplir con tus necesidades.</p>
             </div>
             <div className='buttonsContainer'>
                 <div className='buttonsContainer-buttons'>
