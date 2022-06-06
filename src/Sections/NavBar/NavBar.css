@@ -1,5 +1,6 @@
 .navigation {
-    position: relative;
+    position: fixed;
+    z-index: 99;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,6 +98,7 @@
     .navigation{
         background-color: var(--mainColor);
         padding: 0rem 5rem 0 1rem;
+        position: fixed;
     }
   
     .navigation-menu ul {
@@ -105,10 +107,11 @@
       top: 60px;
       left: 0;
       width: 100%;
-      height: calc(100vh - 60px);
+      height: calc(60vh - 60px);
       background-color: var(--mainColor);
       color: var(--mainBlack);
       box-shadow: 0px -4px 17px -6px #FFFFFF;
+      border-radius: 0 0 20px 20px;
       display: none;
     }
   
@@ -123,6 +126,7 @@
       width: 100%;
       padding: 1rem 0;
       font-size: 2rem;
+      box-shadow: -4x -4px 17px 0px #817d7d;
     }
   
     .navigation-menu li:hover {
