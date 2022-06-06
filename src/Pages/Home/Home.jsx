@@ -1,12 +1,15 @@
 import React from 'react'
-import AboutUs from '../../Sections/AboutUs/AboutUs'
-import ContactUs from '../../Sections/ContactUs/ContactUs'
+
 
 // Componentes
 import Intro from '../../Sections/Intro/Intro'
+import AboutUs from '../../Sections/AboutUs/AboutUs'
+import TechStack from '../../Sections/TechStack/TechStack'
 import OurPrices from '../../Sections/OurPrices/OurPrices'
 import OurServices from '../../Sections/OurServices/OurServices'
+import ContactUs from '../../Sections/ContactUs/ContactUs'
 // import OurWorks from '../../Sections/OurWorks/OurWorks'
+import CookiesBanner from '../../Components/CookiesBanner/CookiesBanner'
 
 // styles
 import './Home.css'
@@ -19,8 +22,10 @@ const Home = () => {
       <OurServices/>
       {/* <OurWorks/> */}
       <AboutUs/>
+      <TechStack/>
       <OurPrices/>
       <ContactUs/>
+      <CookiesBanner/>
     </section>
     </> 
   )

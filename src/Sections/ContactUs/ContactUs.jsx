@@ -4,7 +4,7 @@ import React, {useRef} from 'react'
 import location from '../../assets/icons/location.png';
 import email from '../../assets/icons/email.png';
 import phone from '../../assets/icons/phone.png';
-import GoogleMaps from 'simple-react-google-maps';
+// import GoogleMaps from 'simple-react-google-maps';
 
 // styles
 import './ContactUs.css'
@@ -93,7 +93,7 @@ const ContactUs = () => {
 
           </div>
         </div>
-        <GoogleMaps
+        {/* <GoogleMaps
         apiKey={'AIzaSyB7VwDTTcL14mXE5Zy-xl0-bcIEBYf6CfA'}
         style={{height:'500px', width: '100%'}}
         zoom={13}
@@ -105,7 +105,7 @@ const ContactUs = () => {
           lat: 19.262211536259024, 
           lng: -99.67696844508455,
         }}
-        />
+        />  */}
       </section>
     </>
   )
