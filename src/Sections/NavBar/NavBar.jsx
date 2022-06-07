@@ -12,7 +12,7 @@ import './NavBar.css'
 
 const NavBar = () => {
 
-    let navMenuSettings ={ background : '', borderRadius: 0};
+    let navigationStyles ={ background : '', color: 'white'};
 
     // states
     const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -28,8 +28,8 @@ const NavBar = () => {
 
     const previousOffset = usePrevious(offset);
 
-    if (offset===0) {navMenuSettings.background='var(--bg01)'; navMenuSettings.borderRadius=0} else { navMenuSettings.background = 'var(--bg01)'; navMenuSettings.borderRadius='0 0 0 0'};
-    if (offset===0 && isNavExpanded) {navMenuSettings.background =`var(--gradient04)`; navMenuSettings.borderRadius='0 0 0 0'} ;
+    if (offset===0) {navigationStyles.background='red'; navigationStyles.borderRadius=0} else { navigationStyles.background = 'var(--mainColor)'; navigationStyles.color= 'white'};
+    if (offset===0 && isNavExpanded) {navigationStyles.background =`var(--gradient04)`; navigationStyles.color= 'white'} ;
     if (isNavExpanded && (offset !== previousOffset)) {setIsNavExpanded(!isNavExpanded)};
 
     const ref = useRef()
@@ -47,7 +47,7 @@ const NavBar = () => {
 
 
     return (
-      <nav className="navigation" ref={ref}>
+      <nav className='navigation' style={{background: navigationStyles.background}} ref={ref}>
         <a href="/" className="brand-name">
           <img src={logo} alt="Logotipo" className='logotipo'/>
         </a>
