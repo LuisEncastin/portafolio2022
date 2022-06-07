@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 
 // custom hooks
 import usePrevious from '../../Hooks/usePrevious/usePrevious'
+import useWindowDimensions from '../../Hooks/useWindowDimensions/useWindowDimensions'
 
 // assets
 import logo from '../../assets/images/logos/oie_transparent.png'
@@ -27,9 +28,10 @@ const NavBar = () => {
     }, [offset]);
 
     const previousOffset = usePrevious(offset);
+    const { width } = useWindowDimensions();
 
-    if (offset===0) {navigationStyles.background='red'; navigationStyles.borderRadius=0} else { navigationStyles.background = 'var(--mainColor)'; navigationStyles.color= 'white'};
-    if (offset===0 && isNavExpanded) {navigationStyles.background =`var(--gradient04)`; navigationStyles.color= 'white'} ;
+    if (offset===0) {navigationStyles.background='white'} else { navigationStyles.background = 'var(--mainColor)'; navigationStyles.color= 'white'};
+    if (offset===0 && width < 768 ) {navigationStyles.background ='var(--mainColor)'; navigationStyles.color= 'white'} ;
     if (isNavExpanded && (offset !== previousOffset)) {setIsNavExpanded(!isNavExpanded)};
 
     const ref = useRef()
