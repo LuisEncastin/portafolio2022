@@ -58,7 +58,7 @@ const ContactUs = () => {
 
           <div className='formContainer'>
 
-            <form action="/" className='form' ref={form}> 
+            <form method='post' action="/" className='form' ref={form}> 
 
               <div className='formInputsContainer'>
                 <div className='contactFormInput'>

@@ -10,7 +10,7 @@ import OurServices from '../../Sections/OurServices/OurServices'
 import ContactUs from '../../Sections/ContactUs/ContactUs'
 // import OurWorks from '../../Sections/OurWorks/OurWorks'
 import CookiesBanner from '../../Components/CookiesBanner/CookiesBanner'
-import ModalGeneral from '../../Components/Modales/ModalGeneral/ModalGeneral'
+// import ModalGeneral from '../../Components/Modales/ModalGeneral/ModalGeneral'
 
 // styles
 import './Home.css'
@@ -27,7 +27,7 @@ const Home = () => {
       <OurPrices/>
       <ContactUs/>
       <CookiesBanner/>
-      <ModalGeneral/>
+      {/* <ModalGeneral/> */}
     </section>
     </> 
   )

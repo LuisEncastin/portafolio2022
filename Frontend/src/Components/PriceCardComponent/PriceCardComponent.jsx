@@ -17,7 +17,7 @@ const PriceCardComponent = ({
     descripcion2,
     serviciosArr
 }) => {
-console.log(serviciosArr)
+
   return (
     <>
     <section className='priceCard'>

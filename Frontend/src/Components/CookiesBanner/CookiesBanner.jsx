@@ -28,7 +28,7 @@ const handleClick = () =>{
     </div> 
     : null}
     </>
-  )
+  ) 
 }
 
 export default CookiesBanner
