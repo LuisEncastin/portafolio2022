@@ -83,7 +83,7 @@ const ContactUs = () => {
               </div>
               <div className='contactFormInput'>
                   <label htmlFor="message"></label>
-                  <input type="text" name='message' placeholder='Cuéntanos tu mensaje' className='input input-message'/>
+                  <input type="text" name='message' placeholder='Cuéntame tu mensaje' className='input input-message'/>
               </div>
               <div className='buttonFormContainer'>
                   <button type='submit' onClick={handleSubmit}>Enviar</button> 

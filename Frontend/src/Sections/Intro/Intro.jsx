@@ -1,10 +1,11 @@
 import React from 'react'
 
-// assets
-import introBgImage from '../../assets/images/pexels-arina-krasnikova-5950165.jpg'
 
 // estilos
 import './Intro.css'
+// assets
+// const introBgImage = lazy(()=> import('../../assets/images/pexels-arina-krasnikova-5950165.jpg'));
+import introBgImage from '../../assets/images/pexels-arina-krasnikova-5950165.jpg'
 
 const Intro = () => {
   return (

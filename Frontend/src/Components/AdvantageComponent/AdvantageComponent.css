@@ -8,6 +8,7 @@
     justify-content: center;
     background-color: var(--mainColor);
     padding: 0 2rem;
+    box-shadow: 4px 5px 10px -10px #000;
 }
 
 .advantageComponentWrapper:hover{

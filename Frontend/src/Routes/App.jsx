@@ -1,5 +1,6 @@
 // Router
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 // styles
 import '../styles/bootstrap.css'
@@ -13,7 +14,6 @@ import Home from '../Pages/Home/Home';
 // import Contratos from "../pages/Contratos/Contratos"
 // import Terminos from "../sections/Terminos/Terminos";
 // import AvisoPrivacidad from "../sections/AvisoPrivacidad/AvisoPrivacidad";
-
 import NavBar from "../Sections/NavBar/NavBar";
 import Footer from '../Sections/Footer/Footer';
 
@@ -24,14 +24,14 @@ function App() {
       <BrowserRouter>
       <NavBar/>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home/>}/> 
           {/* <Route path="/nosotros" element={<Nosotros/>} />
           <Route path="/servicios" element={<Servicios/>} />
           <Route path="/contratos" element={<Contratos/>} />
           <Route path="/contacto" element={<Contacto/>} />
           <Route path="/terminos-y-condiciones" element={<Terminos/>} />
           <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad/>} /> */}
-          {/* <Route path="*" element={<Home/>} /> */}
+          <Route path="*" element={<Home/>} />
         </Routes>
       <Footer/>
       </BrowserRouter>

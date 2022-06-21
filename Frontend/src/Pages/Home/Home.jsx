@@ -8,6 +8,7 @@ import TechStack from '../../Sections/TechStack/TechStack'
 import OurPrices from '../../Sections/OurPrices/OurPrices'
 import OurServices from '../../Sections/OurServices/OurServices'
 import ContactUs from '../../Sections/ContactUs/ContactUs'
+import Maps from '../../Sections/Maps/Maps'
 // import OurWorks from '../../Sections/OurWorks/OurWorks'
 import CookiesBanner from '../../Components/CookiesBanner/CookiesBanner'
 // import ModalGeneral from '../../Components/Modales/ModalGeneral/ModalGeneral'
@@ -27,6 +28,7 @@ const Home = () => {
       <OurPrices/>
       <ContactUs/>
       <CookiesBanner/>
+      <Maps/>
       {/* <ModalGeneral/> */}
     </section>
     </> 

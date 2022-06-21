@@ -48,11 +48,11 @@
     outline: 3px solid var(--mainColor);
     border-radius: 20px;
     color: var(--mainFontGray);
+    box-shadow: 9px 5px 14px -10px #000;
 }
 .buttonsContainer button:hover{
     background-color: var(--mainColor);
     color: var(--mainBlack);
-    outline: 3px solid white;
     transition: 0.5s;
 }
 .pricesContainer{

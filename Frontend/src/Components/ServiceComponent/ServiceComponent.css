@@ -10,6 +10,7 @@
     text-align: center;
     border:1px solid #eee;
     background-color: var(--mainBgGray);
+    box-shadow: 4px 5px 10px -10px #000;
 }
 
 .serviceComponentWrapper h1{

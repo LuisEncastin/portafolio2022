@@ -3,7 +3,7 @@
     height: auto;
     margin: 0 2rem;
     border-radius: 3px;
-    box-shadow: var(--mainBoxShadow);
+    box-shadow: 4px 5px 10px -10px #000;
 }
 
 .priceCardWrapper{
