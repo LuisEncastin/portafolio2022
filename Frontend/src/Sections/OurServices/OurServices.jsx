@@ -18,12 +18,17 @@ import ServiceComponent from '../../Components/ServiceComponent/ServiceComponent
 // estilos
 import './OurServices.css'
 
-const OurServices = () => {
+const OurServices = ({
+    ourServicesRef,
+    ourServiceSectionVisibility
+}) => {
   return (
     <>
         <section id='OurServices'> 
             <div className='advantages'>
                 <AdvantageComponent 
+                ourServicesRef={ourServicesRef}
+                ourServiceSectionVisibility={ourServiceSectionVisibility}
                 advantageIcon={features}
                 advantageTitle={'Soluciones efectivas'}
                 advantageDescription={'Nos centramos en tus requerimientos para diseñar soluciones que ayuden a cumplir tus objetivos de forma efectiva.'}
