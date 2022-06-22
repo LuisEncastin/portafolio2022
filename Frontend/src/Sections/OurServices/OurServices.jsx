@@ -14,21 +14,17 @@ import webApp from '../../assets/icons/webApp.png';
 import AdvantageComponent from '../../Components/AdvantageComponent/AdvantageComponent';
 import ServiceComponent from '../../Components/ServiceComponent/ServiceComponent';
 
-
 // estilos
 import './OurServices.css'
 
-const OurServices = ({
-    ourServicesRef,
-    ourServiceSectionVisibility
-}) => {
+
+const OurServices = () => {
+
   return (
     <>
         <section id='OurServices'> 
             <div className='advantages'>
                 <AdvantageComponent 
-                ourServicesRef={ourServicesRef}
-                ourServiceSectionVisibility={ourServiceSectionVisibility}
                 advantageIcon={features}
                 advantageTitle={'Soluciones efectivas'}
                 advantageDescription={'Nos centramos en tus requerimientos para diseñar soluciones que ayuden a cumplir tus objetivos de forma efectiva.'}

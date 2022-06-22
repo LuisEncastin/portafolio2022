@@ -1,7 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
-
-// hooks/librerias
-// import { useInView } from 'react-intersection-observer';
+import React from 'react'
 
 // Componentes
 import Intro from '../../Sections/Intro/Intro'
@@ -19,26 +16,11 @@ import CookiesBanner from '../../Components/CookiesBanner/CookiesBanner'
 import './Home.css'
 
 const Home = () => {
-
-  // const { ref, inView, entry } = useInView(options);
-  const ourServicesRef = useRef(); 
-  const [ourServiceSectionVisibility, setOurServiceSectionVisibility] = useState(false);
-  console.log('my element is visible', ourServiceSectionVisibility)
-  useEffect(()=>{
-    const observer = new IntersectionObserver((entries)=>{
-      const entry = entries[0];
-      setOurServiceSectionVisibility(entry.isIntersecting)
-    });
-    observer.observe(ourServicesRef.current)
-  }, []);
-
   return (
     <>
     <section id='Home'>
       <Intro/>
-      <OurServices 
-      ourServicesRef={ourServicesRef} 
-      ourServiceSectionVisibility={ourServiceSectionVisibility}/>
+      <OurServices/>
       {/* <OurWorks/> */}
       <AboutUs/>
       <TechStack/>

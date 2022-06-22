@@ -2,6 +2,8 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
+// context
+import { ObserversProvider } from "../context/observerContext";
 // styles
 import '../styles/bootstrap.css'
 import '../styles/index.css';
@@ -20,22 +22,24 @@ import Footer from '../Sections/Footer/Footer';
 function App() {
   return (
     <>
-    <div className="App">
-      <BrowserRouter>
-      <NavBar/>
-        <Routes>
-        <Route exact path="/" element={<Home/>}/> 
-          {/* <Route path="/nosotros" element={<Nosotros/>} />
-          <Route path="/servicios" element={<Servicios/>} />
-          <Route path="/contratos" element={<Contratos/>} />
-          <Route path="/contacto" element={<Contacto/>} />
-          <Route path="/terminos-y-condiciones" element={<Terminos/>} />
-          <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad/>} /> */}
-          <Route path="*" element={<Home/>} />
-        </Routes>
-      <Footer/>
-      </BrowserRouter>
-    </div>
+    <ObserversProvider>
+      <div className="App">
+        <BrowserRouter>
+        <NavBar/>
+          <Routes>
+          <Route exact path="/" element={<Home/>}/> 
+            {/* <Route path="/nosotros" element={<Nosotros/>} />
+            <Route path="/servicios" element={<Servicios/>} />
+            <Route path="/contratos" element={<Contratos/>} />
+            <Route path="/contacto" element={<Contacto/>} />
+            <Route path="/terminos-y-condiciones" element={<Terminos/>} />
+            <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad/>} /> */}
+            <Route path="*" element={<Home/>} />
+          </Routes>
+        <Footer/>
+        </BrowserRouter>
+      </div>
+    </ObserversProvider>
     </>
 
   );
