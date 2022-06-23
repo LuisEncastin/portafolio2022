@@ -1,0 +1,140 @@
+.navigation {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0rem 5rem 0 10rem;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
+  
+.navigation .brand-name{
+  width: 12rem;
+  height: auto;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation .brand-name .logotipo{
+  width: 10rem;
+  height: 5rem;
+}
+
+  .brand-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+    padding: 1rem 0 0 0;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    color: var(--mainBlack); 
+  }
+
+  .navigation-menu li a:hover{
+    color: white;
+    transition: 0.2s;    
+    background-color: var(--mainColor);
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 5rem;
+    width: 5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+    background-color: var(--mainColor);
+  }
+
+  .hamburger img{
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  /* .hamburger:hover {
+  } */
+  
+  @media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+    }
+
+    .navigation{
+        background-color: var(--mainColor);
+        padding: 0rem 5rem 0 1rem;
+        position: fixed;
+    }
+  
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(60vh - 60px);
+      background-color: var(--mainColor);
+      color: var(--mainBlack);
+      box-shadow: 0px -4px 17px -6px #FFFFFF;
+      border-radius: 0 0 20px 20px;
+      display: none;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+      padding: 1rem 0 0 0;
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 2rem;
+      box-shadow: -4x -4px 17px 0px #817d7d;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: #eee;
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+      font-size: 1.5rem;
+    }
+  }

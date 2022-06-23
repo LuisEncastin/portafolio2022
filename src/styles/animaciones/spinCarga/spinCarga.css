@@ -1,0 +1,27 @@
+.spin-main-cont {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.5;
+  }
+  .spin-animation-spin {
+    position: absolute;
+    border: 1rem solid var(--neutralLGray);
+    border-top-color: var(--primaryG);
+    border-top-style: groove;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    animation: 1s giro linear infinite;
+  }
+  @keyframes giro {
+    form {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

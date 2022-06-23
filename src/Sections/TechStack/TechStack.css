@@ -1,0 +1,73 @@
+#techStack{
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 3rem;
+}
+
+#techStack h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#techStack p{
+    font-size: 1.6rem;
+    margin: 0 15rem 2rem;
+    text-align: center;
+}
+
+.carousel-container{
+    width: 100%;
+    height: 300px;
+    background-image: url('../../assets/images/pexels-julia-m-cameron-4144294.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    margin: 1rem 0;
+}
+
+.carousel-item-padding-40-px{
+    height: 220px;
+    margin: 0 0.5rem;
+    background-color: var(--mainBgGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: var(--mainBoxShadow);
+}
+
+.itemImg{
+    width: 200px;
+    height: 150px;
+}
+
+.carousel-item-padding-40-px div p{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--mainFontGray);
+}
+
+@media (max-width:768px) {
+    #techStack{
+        padding: 4rem 0rem 3rem;
+    }
+    #techStack h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    #techStack p{
+        font-size: 1.6rem;
+        margin: 2rem;
+        text-align: center;
+    }
+}

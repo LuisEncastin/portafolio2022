@@ -1,0 +1,114 @@
+.priceCard{
+    width: 345px;
+    height: auto;
+    margin: 0 2rem;
+    border-radius: 3px;
+    box-shadow: 4px 5px 10px -10px #000;
+}
+
+.priceCardWrapper{
+    background-color: var(--mainBgGray);
+    padding: 6rem 2rem;
+    border-radius: 3px 3px 0 0;
+}
+
+.priceCard h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.priceCard h2{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: end;
+}
+
+.priceCard h3{
+    text-align: justify;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.priceCard .serviceFeaturesContainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content:flex-start;
+    width: auto;
+}
+
+.priceCard .serviceFeaturesContainer .serviceFeature{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    width: 160px;
+    font-weight: 700;
+}
+
+.serviceFeaturesContainer .serviceFeature .featureIcon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.priceCardWrapperSecondary{
+    background-color: white;
+    padding: 6rem 2rem;
+    border-radius: 0 0 3px 3px;
+    height: auto;
+}
+
+.featuresList{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: var(--mainFontGray);
+}
+
+.featuresList .listItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.featuresList .listItem i{
+    margin: 0 1rem 0 0;
+}
+
+.featuresList .checkmark{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.priceCard .buttonBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceCard button{
+    font-size: 2rem;
+    padding: 1rem 10rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--mainColor);
+    margin-top: 2rem;
+}
+
+.priceCard button:hover{
+    background-color: var(--mainBgGray);
+    box-shadow: var(--mainBoxShadow);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .priceCard{
+        width: 345px;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+}

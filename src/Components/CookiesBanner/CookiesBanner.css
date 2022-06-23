@@ -1,0 +1,43 @@
+.cookiesBannerContainer{
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    z-index: 99;
+    position: fixed;
+    padding: 0 5rem;
+    background-color: var(--mainBlack);
+    color: var(--mainBgGray);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cookiesBannerContainer .cookiesButtonsContainer button{
+    width: 15rem;
+    height: auto;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--mainColor);
+    cursor: pointer;
+}
+
+.cookiesBannerContainer .cookiesButtonsContainer button:hover{
+    background-color: var(--mainBgGray);
+    transition: 0.3s;
+}
+
+.cookiesBannerContainer a {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .cookiesBannerContainer{
+        height: 40vh;
+        padding: 1rem 2rem;
+    }
+}
