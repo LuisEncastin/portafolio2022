@@ -1,28 +1,20 @@
 import React from 'react'
 
-// context
-// import { ObserverContext } from '../../context/observerContext';
-
 // estilos
 import './AdvantageComponent.css'
 
-const AdvantageComponent = ({
+const AdvantageComponent = ({ 
   advantageIcon,
   advantageTitle,
   advantageDescription,
+  advantageComponentAnimation
 }) => {
-
-//   const {
-//     ourServicesRef,
-//     observerState: ourServiceSectionVisibility,
-// } = React.useContext(ObserverContext);
 
   return (
     <>
     <div 
-    // className={`advantageComponentWrapper ${ourServiceSectionVisibility ? 'advantageComponentAnimation' : null}  `} 
-    className='advantageComponentWrapper' 
-    //ref={ourServicesRef}
+
+    className={` ${advantageComponentAnimation ? 'scale-up-center advantageComponentWrapper' : null}`} 
     >
         <img src={advantageIcon} alt="advantageIcon" />
         <h1>{advantageTitle}</h1>

@@ -1,10 +1,12 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 
 // assets
 import location from '../../assets/icons/location.png';
 import email from '../../assets/icons/email.png';
 import phone from '../../assets/icons/phone.png';
-// import GoogleMaps from 'simple-react-google-maps';
+
+// context
+import { ObserverContext } from '../../context/observerContext';
 
 // styles
 import './ContactUs.css'
@@ -22,9 +24,36 @@ const ContactUs = () => {
 
   const form = useRef(null);
 
+  const [contactUsSectionAnimation, setContactUsSectionAnimation] = useState(false)
+
+  const {
+    generalYOffset,
+  } = React.useContext(ObserverContext);
+
+  const contactUsSectionRef= useRef();
+
+  useEffect(() => {
+      const contactUsSectionLimiteOffsetUp = (contactUsSectionRef.current.offsetTop)-600;
+      const contactUsSectionLimiteOffsetDown = (contactUsSectionRef.current.offsetTop)+(contactUsSectionRef.current.offsetHeight)+100;
+      
+      if (
+        generalYOffset > contactUsSectionLimiteOffsetUp && generalYOffset  < contactUsSectionLimiteOffsetDown 
+        ) {
+        setContactUsSectionAnimation(true);
+      } else {
+        setContactUsSectionAnimation(false)
+      }
+  
+    }, [generalYOffset])
+
+
   return (
     <>
-      <section id='contactUs'>
+      <section 
+      id='contactUs'
+      ref={contactUsSectionRef}
+      className={`${contactUsSectionAnimation ? 'slide-in-right' : null} `} 
+      >
         <div className='contactUsWrapper'>
             <h1>Contáctame</h1>
             <p>Si tienes alguna pregunta acerca de mis servicios, puedes contactarme.</p>

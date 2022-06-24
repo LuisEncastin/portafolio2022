@@ -3,6 +3,9 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// context
+// import { ObserverContext } from '../../context/observerContext';
+
 // styles
 import './TechStack.css'
 
@@ -26,9 +29,35 @@ const TechStack = () => {
         }
       };
 
+    //   const [techStackSectionAnimation, setTechStackSectionAnimation] = useState(false)
+
+    //   const {
+    //     generalYOffset,
+    //   } = React.useContext(ObserverContext);
+  
+    //   const techStackRef= useRef();
+  
+    //   useEffect(() => {
+    //       const techStackSectionLimiteOffsetTop = (techStackRef.current.offsetTop)-800;
+    //       const techStackSectionLimiteOffsetDown= (techStackRef.current.offsetTop)+(techStackRef.current.offsetHeight)+100;
+          
+    //       if (
+    //         generalYOffset > techStackSectionLimiteOffsetTop && generalYOffset  < techStackSectionLimiteOffsetDown
+    //         ) {
+    //         setTechStackSectionAnimation(true);
+    //       } else {
+    //         setTechStackSectionAnimation(false)
+    //       }
+      
+    //     }, [generalYOffset])
+
   return (
     <>
-    <section id='techStack'>
+    <section 
+    id='techStack'
+    // ref={techStackRef}
+    // className={`${techStackSectionAnimation ? 'slide-in-left' : null} `} 
+    >
         <h1>Plataformas y tecnologías</h1>
         <p>Me especializo en el stack MERN, haciendo uso de herramientas, lenguajes y plataformas modernas que cuentan con amplio soporte de la comunidad, y que además garantizan que tus aplicaciones estén siempre disponibles.</p>
         <Carousel

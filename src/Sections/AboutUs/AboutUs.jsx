@@ -11,30 +11,28 @@ import './AboutUs.css';
 
 const AboutUs = () => {
 
-  const [animation, setAnimation] = useState(false)
+  const [photoAnimation, setPhotoAnimation] = useState(false)
 
   const {
     generalYOffset,
   } = React.useContext(ObserverContext);
-  console.log('general offset',generalYOffset)
 
   const fotoPerfilRef=useRef()
   
   useEffect(() => {
-    const fotoPerfilLimiteOffsetTop = (fotoPerfilRef.current.offsetTop)-100;
-    console.log('limte superior', fotoPerfilLimiteOffsetTop);
+    const fotoPerfilLimiteOffsetTop = (fotoPerfilRef.current.offsetTop)-1000;
     const fotoPerfilLimiteOffsetDown = (fotoPerfilRef.current.offsetTop)+(fotoPerfilRef.current.offsetHeight)+100;
-    console.log('limite inferior', fotoPerfilLimiteOffsetDown);
     
-    if (generalYOffset > fotoPerfilLimiteOffsetTop && generalYOffset  < fotoPerfilLimiteOffsetDown ) {
-      setAnimation(true);
+    if (
+      generalYOffset > fotoPerfilLimiteOffsetTop && generalYOffset  < fotoPerfilLimiteOffsetDown 
+      //generalYOffset === fotoPerfilLimiteOffsetTop
+      ) {
+      setPhotoAnimation(true);
     } else {
-      setAnimation(false)
+      setPhotoAnimation(false)
     }
 
   }, [generalYOffset])
-
-  console.log(animation)
 
   return (
     <>
@@ -55,7 +53,7 @@ const AboutUs = () => {
           </div>
           <div 
             ref={fotoPerfilRef}
-            className={`aboutUsImage ${animation ? 'slide-in-left' : null}`} 
+            className={`aboutUsImage ${photoAnimation ? 'scale-up-center' : null}`} 
             //className='aboutUsImage'
             style={{backgroundImage: `url(${profilePic})`}}>
           </div>
